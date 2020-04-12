@@ -1,4 +1,5 @@
 <template>
+<!-- 是项目入口文件 -->
   <div id="app">
     <img src="./assets/logo.png">
     <router-view/>
@@ -6,8 +7,23 @@
 </template>
 
 <script>
+// import router from '@/router/index'
+
 export default {
-  name: 'App'
+  name: 'App',
+  // components: {
+  //   router
+  // },
+  created: {
+    // router.beforeEach((to: any, from: any, next: any) => {
+    // // 路由改造（全局路由拦截，用户登陆验证等）
+    //   if (to.name === 'login') {
+    //     next({name: 'home/index'})
+    //   } else {
+    //     next()
+    //   }
+    // })
+  }
 }
 </script>
 
