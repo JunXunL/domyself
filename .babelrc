@@ -1,3 +1,4 @@
+// 编译参数，vue开发需要babel编译
 {
   "presets": [
     ["env", {

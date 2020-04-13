@@ -1,3 +1,4 @@
+# 用来过滤一些版本控制的文件，比如node_modules文件夹 
 .DS_Store
 node_modules/
 /dist/
