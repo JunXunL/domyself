@@ -1,6 +1,7 @@
 <template>
 <!-- 是项目入口文件 -->
   <div id="app">
+    <v-header></v-header>
     <img src="./assets/logo.png">
     <router-view/>
   </div>
@@ -8,12 +9,13 @@
 
 <script>
 // import router from '@/router/index'
-
+import Header from './components/header'
 export default {
   name: 'App',
-  // components: {
+  components: {
+    'v-header': Header
   //   router
-  // },
+  },
   created: {
     // router.beforeEach((to: any, from: any, next: any) => {
     // // 路由改造（全局路由拦截，用户登陆验证等）

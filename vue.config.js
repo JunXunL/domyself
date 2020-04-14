@@ -1,17 +1,17 @@
 const baseSrc = 'src/pages',
     fs = require('fs')
     path = require('path'),
-    dirs = fs.readdirSync('./src/pages'); // 新建pages文件夹，将所有的小模块的页面都放入pages里，一个模块一个文件夹
+    dirs = fs.readdirSync('./src/pages') // 新建pages文件夹，将所有的小模块的页面都放入pages里，一个模块一个文件夹
 
-let pages = {};
+let pages = {}
 
 function resolve(dir) {
     return path.join(__dirname, dir)
 }
 
 dirs.forEach( (dir) => {
-    pages[dir] = '${baseSrc}${dir}/main.js';
-});
+    pages[dir] = '${baseSrc}${dir}/main.js'
+})
 
 module.exports = {
     // 部署应用时的基本 URL
@@ -56,7 +56,7 @@ module.exports = {
         // 获取数据
         before: app => {
             // app.get('/api/goods',(req,rep)=>{
-            //     rep.json(data);
+            //     rep.json(data)
             // })
         },
         proxy: { // 跨域 - 配置多个代理(配置一个 proxy: 'http://localhost:4000' )
@@ -112,4 +112,4 @@ module.exports = {
     pluginOptions: {
         // ...
     }
-};
+}
