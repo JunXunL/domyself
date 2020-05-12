@@ -22,3 +22,4 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 
 # 遇到的问题及解决方案
 ## 1、vue中用mock制造模拟接口 http://www.likecs.com/show-52362.html
+## 2、Vuex持久化插件(vuex-persistedstate)-解决刷新数据消失的问题
