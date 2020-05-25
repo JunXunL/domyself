@@ -1,6 +1,6 @@
 <template>
   <div>
-    签到
+    鞋子
   </div>
 </template>
 <script>

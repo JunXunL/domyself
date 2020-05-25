@@ -1,6 +1,6 @@
 <template>
   <div>
-    搜索
+    <!-- 裤子 -->
   </div>
 </template>
 <script>

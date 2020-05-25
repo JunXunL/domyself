@@ -4,7 +4,7 @@
     <v-header></v-header>
     <!-- <img src="./assets/logo.png"> -->
     <router-view/>
-    <v-footer></v-footer>
+    <Footer></Footer>
   </div>
 </template>
 
@@ -16,18 +16,8 @@ export default {
   name: 'App',
   components: {
     'v-header': Header,
-    'v-footer': Footer
+    Footer
   //   router
-  },
-  created: {
-    // router.beforeEach((to: any, from: any, next: any) => {
-    // // 路由改造（全局路由拦截，用户登陆验证等）
-    //   if (to.name === 'login') {
-    //     next({name: 'home/index'})
-    //   } else {
-    //     next()
-    //   }
-    // })
   }
 }
 </script>
