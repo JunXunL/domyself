@@ -2,18 +2,21 @@
 <!-- 是项目入口文件 -->
   <div id="app">
     <v-header></v-header>
-    <img src="./assets/logo.png">
+    <!-- <img src="./assets/logo.png"> -->
     <router-view/>
+    <v-footer></v-footer>
   </div>
 </template>
 
 <script>
 // import router from '@/router/index'
-import Header from './components/header'
+import Header from './components/Header'
+import Footer from './components/Footer'
 export default {
   name: 'App',
   components: {
-    'v-header': Header
+    'v-header': Header,
+    'v-footer': Footer
   //   router
   },
   created: {
