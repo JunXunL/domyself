@@ -1,15 +1,13 @@
 <template>
-<!-- 是项目入口文件 -->
+<!-- 根组件，整个组件的入口【组件文件入口】 -->
   <div id="app">
     <v-header></v-header>
-    <!-- <img src="./assets/logo.png"> -->
     <router-view/>
     <Footer></Footer>
   </div>
 </template>
 
 <script>
-// import router from '@/router/index'
 import Header from './components/Header'
 import Footer from './components/Footer'
 export default {
@@ -17,7 +15,9 @@ export default {
   components: {
     'v-header': Header,
     Footer
-  //   router
+  },
+  data () {
+    return {}
   }
 }
 </script>

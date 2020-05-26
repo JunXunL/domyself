@@ -1,22 +1,20 @@
 <template>
   <div class="home">
-   <!--在前端HTML页面中使用 count-->
-    <!-- <HelloWorld :msg="count"/> -->
-    <!-- <NavigationMenu></NavigationMenu> -->
-    <router-view></router-view>
+    <NavigationMenu></NavigationMenu>
+    <router-view />
   </div>
 </template>
 <script>
-// import NavigationMenu from '@/components/home/NavigationMenu.vue'
+import NavigationMenu from '@/components/home/NavigationMenu.vue'
 // import { mapActions, mapState } from 'vuex' // 注册 action 和 state
 export default {
   name: 'home',
   data () {
     return {}
+  },
+  components: {
+    NavigationMenu
   }
-  // components: {
-  //   NavigationMenu
-  // },
   // created () {
   //   this.incrementStep()
   // },

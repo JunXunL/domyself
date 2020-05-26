@@ -23,3 +23,7 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 # 遇到的问题及解决方案
 ## 1、vue中用mock制造模拟接口 http://www.likecs.com/show-52362.html
 ## 2、Vuex持久化插件(vuex-persistedstate)-解决刷新数据消失的问题
+
+## 引入vant组件（参考vant快速上手）：自动按需引入组件 (推荐)
+### babel-plugin-import 是一款 babel 插件，它会在编译过程中将 import 的写法自动转换为按需引入的方式
+### 安装插件： npm i babel-plugin-import -D
