@@ -27,3 +27,8 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 ## 引入vant组件（参考vant快速上手）：自动按需引入组件 (推荐)
 ### babel-plugin-import 是一款 babel 插件，它会在编译过程中将 import 的写法自动转换为按需引入的方式
 ### 安装插件： npm i babel-plugin-import -D
+
+# package.js 是npm的配置文件
+# vue.config.js 是webpack的配置文件
+## vue.config.js 是一个可选的配置文件，如果项目的 (和 package.json 同级的) 根目录中存在这个文件，那么它会被 @vue/cli-service 自动加载。也可以使用 package.json 中的 vue 字段，但是注意这种写法需要严格遵照 JSON 的格式来写。
+

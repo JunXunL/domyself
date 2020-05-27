@@ -1,6 +1,6 @@
 <template>
   <div class="header">
-    <h1>头部</h1>
+    <div></div>
   </div>
 </template>
 
@@ -15,3 +15,11 @@ export default {
   methods: {}
 }
 </script>
+
+<style lang="scss" scoped>
+.header {
+  height: 60px;
+  widows: 100%;
+  background-color: #fff;
+}
+</style>
