@@ -16,7 +16,8 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
+/* <style lang="scss" scoped> 使用 lang="scss"要npm安装插件 */
 .header {
   height: 60px;
   widows: 100%;
