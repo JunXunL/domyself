@@ -1,28 +1,23 @@
 <template>
-<!-- 是项目入口文件 -->
+<!-- 根组件，整个组件的入口【组件文件入口】 -->
   <div id="app">
-    <img src="./assets/logo.png">
+    <v-header></v-header>
     <router-view/>
+    <Footer></Footer>
   </div>
 </template>
 
 <script>
-// import router from '@/router/index'
-
+import Header from './components/Header'
+import Footer from './components/Footer'
 export default {
   name: 'App',
-  // components: {
-  //   router
-  // },
-  created: {
-    // router.beforeEach((to: any, from: any, next: any) => {
-    // // 路由改造（全局路由拦截，用户登陆验证等）
-    //   if (to.name === 'login') {
-    //     next({name: 'home/index'})
-    //   } else {
-    //     next()
-    //   }
-    // })
+  components: {
+    'v-header': Header,
+    Footer
+  },
+  data () {
+    return {}
   }
 }
 </script>
