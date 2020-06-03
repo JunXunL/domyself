@@ -16,11 +16,11 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 /* <style lang="scss" scoped> 使用 lang="scss"要npm安装插件 */
 .header {
   height: 60px;
   widows: 100%;
-  background-color: #fff;
+  background-color: red;
 }
 </style>

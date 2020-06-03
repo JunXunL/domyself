@@ -40,3 +40,11 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 ## .env.local          # 在所有的环境中被载入，但会被 git 忽略
 ## .env.[mode]         # 只在指定的模式中被载入
 ## .env.[mode].local   # 只在指定的模式中被载入，但会被 git 忽略
+
+# 使用scss (注意版本问题)
+##  "css-loader": "^0.28.11",    "node-sass": "^4.11.0",    "sass-loader": "^7.1.0",    "vue-loader": "^13.7.3",    "vue-style-loader": "^3.1.2"
+## 1.先安装sass 依赖包：npm  install sass-loader --save-dev 和 npm install node-sass --sava-dev
+## 2.在build文件夹下的webpack.base.conf.js的rules里面添加配置 {test: /\.scss$/, loaders: ['style', 'css', 'sass']}
+## 3.使用scss时候，在style样式标签上添加  lang="scss" 即可
+## 4.应用对应的语法，否则报错，如：修改字体颜色  <style lang="scss"> $color:red;  div {color:$color;} </style>
+## @import '文件路径'， 命令导入外部sass、scss、css文件
