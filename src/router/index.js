@@ -99,6 +99,23 @@ const routes = [
   }
 ]
 
+// 配置路由导航守卫
+// router.beforeEach((to,from,next)=>{
+//   let writeTitle=false
+//   for(let i=0;i<writeTitleRoutes.length;i++){
+//     const pathReg = new RegExp(writeTitleRoutes[i].path);
+//     if (pathReg.test(to.path)) {
+//       writeTitle = true;
+//       break;
+//     }
+//   }
+
+//   if (store.state.index.writeTitle !== writeTitle) {
+//     store.commit("index/SET_TITLE", writeTitle);
+//   }
+//   next();
+// })
+
 export default new VueRouter({
   /**
    * 1、hash 模式，vue-router 默认 —— 使用 URL 的 hash 来模拟一个完整的 URL，于是当 URL 改变时，页面不会重新加载
