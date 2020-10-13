@@ -8,6 +8,7 @@ const path = require('path')
  * @readdirSync fs模块，用于读取文件夹下所有的文件/文件夹，返回数组，fs.readdir的同步版本
  * @resolve path模块，用于拼接文件路径
  * @existsSync fs模块，判断路径是否存在，返回布尔值
+ * process.cwd() 方法会返回 Node.js 进程的当前工作目录，是当前执行node命令时候的文件夹地址，路径始终不变。__dirname 是被执行的js 文件的地址
  */
 const dirs = fs.readdirSync(path.resolve(process.cwd(), "src/pages")) // 新建pages文件夹，将所有的小模块的页面都放入pages里，一个模块一个文件夹
 const pages = dirs.reduce((config,dirname)=>{
@@ -97,6 +98,7 @@ module.exports = {
   // },
   configureWebpack: {
     resolve:{
+        // 目录引用简写
         alias:{
             "@_src": path.resolve(__dirname,"src/")
         }

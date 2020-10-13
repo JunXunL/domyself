@@ -21,6 +21,6 @@ export default {
 .header {
   height: 60px;
   widows: 100%;
-  background-color: red;
+  background-color: #ddd;
 }
 </style>
