@@ -36,7 +36,7 @@ import store from './store' // 引入状态管理 store
 
 // Vue.use(VueAxios, axios)
 
-import axios from './axios/ajax.js'
+// import axios from './axios/ajax.js'
 // 测试远程mock地址
 // axios.baseURL = process.env.VUE_APP_URL;
 // console.log("测试远程mock地址:  " + process.env.VUE_APP_URL);
@@ -45,9 +45,9 @@ import axios from './axios/ajax.js'
 // });
 
 // axios 是一个基于 promise 的 HTTP 库，axios并没有install方法，所以是不能使用vue.use()方法的。
-Vue.prototype.$ajax = axios
+// Vue.prototype.$ajax = axios
 
-process.env.Mock && require('./mock/mock.js')
+// process.env.Mock && require('./mock/mock.js')
 
 // if(process.env.NODE_ENV === "development"){
 //   // 直接在main.js里面引用
