@@ -1,6 +1,8 @@
 <template>
   <div class="header">
-    <div></div>
+    <div>扫一扫</div>
+    <div>天气</div>
+    <div>日历（日记本功能）</div>
   </div>
 </template>
 
